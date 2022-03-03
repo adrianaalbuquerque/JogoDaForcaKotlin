@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     print("Digite a dica da palavra: ")
     var dica = readLine()!!
 
-    var forca = JogoDaForca("Casa", "Lar")
+    var forca = JogoDaForca(palavra, dica)
     forca.start()
 
     while (true) {

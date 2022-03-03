@@ -54,17 +54,10 @@ class JogoDaForca (private var palavra_da_forca: String, private var Dica: Strin
         return letras_usadas
     }
 
-    fun LetrasDistintas():Int {
-        var quantidade_letras_distintas = this.TamanhoDaForca
 
-        for (y in 0 until TamanhoDaForca) {
-            for (x in y+1 until TamanhoDaForca) {
-                if (palavra_da_forca[y] == palavra_da_forca[x]) {
-                    quantidade_letras_distintas --
-                }
-            }
-        }
-        return quantidade_letras_distintas
+    fun LetrasDistintas():Int {
+        var letrasDistintas = palavra_da_forca.uppercase().toList()
+        return letrasDistintas.distinct().size
     }
 
     fun Adivinhar(letra: String) {
