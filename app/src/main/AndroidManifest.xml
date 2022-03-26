@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jogodaforcakotlin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JogoDaForcaKotlin">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
+<!-- Esse arquivo é criado quando criamos um app no android studio, tem algumas configurações da minha aplicação e é onde iremos solicitar permissões
+como acessar gps, internet, fazer ligações e tal e precisamos explicitar aqui que queremos usar tais coisas.
+Essa aplicação tem apenas uma Activity e se refere ao Main. Intent Filter diz qual é a activity principal e diz onde está disponível.
+Todas as Activities do projeto precisam estar listadas nessa pasta (manifests), do contrário não estarão disponíveis na aplicação-->
